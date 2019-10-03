@@ -1,0 +1,111 @@
+.coords-container {
+    height: 50vh;
+    padding: 0;
+    background-size: cover;
+    background-position: 50% 64%;
+}
+
+.coords-panel {
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    text-align: right;
+    height: 50vh;
+}
+
+.coords-panel img {
+    width: 85%;
+    margin-right: 7.5%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.coords-panel ul {
+    margin-bottom: 4vh;
+}
+
+.coords-panel li {
+    margin-bottom: 1vh;
+}
+
+
+article.products {
+    margin-bottom: 5vh;
+}
+
+.products h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #007588;
+    padding-bottom: 2vh;
+    margin-bottom: 4vh;
+}
+
+.products p {
+    padding-left: 2vw;
+}
+
+.products div {
+    height: 40vh;
+}
+
+.products .text-container {
+    transform: skew(-15deg);
+    z-index: 3;
+    background-color: #fff;
+    margin-right: -5%;
+}
+
+.products .text-container * {
+    transform: skew(15deg);
+}
+
+.products .text-content *, .products .text-container.reverse .text-content * {
+    transform: none;
+}
+
+.products .text-container.reverse {
+    transform: skew(15deg);
+    z-index: 3;
+    background-color: #fff;
+    margin-right: 0;
+    margin-left: -5%;
+    padding-top: 2vh;
+    padding-left: 3vw;
+}
+
+.products .text-container.reverse * {
+    transform: skew(-15deg);
+}
+
+.products .images-container {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.products .images-container.no-resize {
+    background-size: contain;
+}
+
+.products .images-container.low-position {
+    background-position-y: 5%;
+}
+
+.products .images-container.high-position {
+    background-position-y: 75%;
+}
+
+@media screen and (max-width: 766px) {
+    .coords-panel img {
+        width: 50%;
+    }
+
+    .products .text-container, .products .text-container *, .products .text-container.reverse, .products .text-container.reverse * {
+        transform: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .products div {
+        height: 30vh;
+    }
+}

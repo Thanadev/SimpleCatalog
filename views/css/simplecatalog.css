@@ -1,0 +1,111 @@
+.coords-container {
+    height: 50vh;
+    padding: 0;
+    background-size: cover;
+    background-position: 50% 64%;
+}
+
+.coords-panel {
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    text-align: right;
+    height: 50vh;
+}
+
+.coords-panel img {
+    width: 85%;
+    margin-right: 7.5%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.coords-panel ul {
+    margin-bottom: 4vh;
+}
+
+.coords-panel li {
+    margin-bottom: 1vh;
+}
+
+
+article.products-sc {
+    margin-bottom: 5vh;
+}
+
+.products-sc h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #007588;
+    padding-bottom: 2vh;
+    margin-bottom: 4vh;
+}
+
+.products-sc p {
+    padding-left: 2vw;
+}
+
+.products-sc div {
+    height: 40vh;
+}
+
+.products-sc .text-container {
+    transform: skew(-15deg);
+    z-index: 3;
+    background-color: #fff;
+    margin-right: -5%;
+}
+
+.products-sc .text-container * {
+    transform: skew(15deg);
+}
+
+.products-sc .text-content *, .products-sc .text-container.reverse .text-content * {
+    transform: none;
+}
+
+.products-sc .text-container.reverse {
+    transform: skew(15deg);
+    z-index: 3;
+    background-color: #fff;
+    margin-right: 0;
+    margin-left: -5%;
+    padding-top: 2vh;
+    padding-left: 3vw;
+}
+
+.products-sc .text-container.reverse * {
+    transform: skew(-15deg);
+}
+
+.products-sc .images-container {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.products-sc .images-container.no-resize {
+    background-size: contain;
+}
+
+.products-sc .images-container.low-position {
+    background-position-y: 5%;
+}
+
+.products-sc .images-container.high-position {
+    background-position-y: 75%;
+}
+
+@media screen and (max-width: 766px) {
+    .coords-panel img {
+        width: 50%;
+    }
+
+    .products-sc .text-container, .products-sc .text-container *, .products-sc .text-container.reverse, .products-sc .text-container.reverse * {
+        transform: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .products-sc div {
+        height: 30vh;
+    }
+}

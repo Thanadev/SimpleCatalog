@@ -18,7 +18,7 @@
     <div>
         {foreach from=$products item=product name=prodLoop}
             {if $smarty.foreach.prodLoop.index % 2 == 0}
-                <article class="row products row" data-aos="zoom-out-right">
+                <article class="row products-sc row" data-aos="zoom-out-right">
                 <div class="offset-md-2 col-md-4 text-container">
                     <h2>{$product->name|escape:'htmlall':'UTF-8'}</h2>
                     <div class="text-content">{$product->text nofilter}</div>
@@ -28,7 +28,7 @@
                 </div>
                 </article>
             {else}
-                <article class="row products" data-aos="zoom-out-left">
+                <article class="row products-sc" data-aos="zoom-out-left">
                     <div class="offset-md-2 col-md-5 images-container {$product->img_setting|escape:'htmlall':'UTF-8'}" style="background-image: url('{$product->image_path}')">
 
                     </div>

@@ -28,41 +28,41 @@
 }
 
 
-article.products {
+article.products-sc {
     margin-bottom: 5vh;
 }
 
-.products h2 {
+.products-sc h2 {
     font-size: 2em;
     border-bottom: 2px solid #007588;
     padding-bottom: 2vh;
     margin-bottom: 4vh;
 }
 
-.products p {
+.products-sc p {
     padding-left: 2vw;
 }
 
-.products div {
+.products-sc div {
     height: 40vh;
 }
 
-.products .text-container {
+.products-sc .text-container {
     transform: skew(-15deg);
     z-index: 3;
     background-color: #fff;
     margin-right: -5%;
 }
 
-.products .text-container * {
+.products-sc .text-container * {
     transform: skew(15deg);
 }
 
-.products .text-content *, .products .text-container.reverse .text-content * {
+.products-sc .text-content *, .products-sc .text-container.reverse .text-content * {
     transform: none;
 }
 
-.products .text-container.reverse {
+.products-sc .text-container.reverse {
     transform: skew(15deg);
     z-index: 3;
     background-color: #fff;
@@ -72,25 +72,25 @@ article.products {
     padding-left: 3vw;
 }
 
-.products .text-container.reverse * {
+.products-sc .text-container.reverse * {
     transform: skew(-15deg);
 }
 
-.products .images-container {
+.products-sc .images-container {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 
-.products .images-container.no-resize {
+.products-sc .images-container.no-resize {
     background-size: contain;
 }
 
-.products .images-container.low-position {
+.products-sc .images-container.low-position {
     background-position-y: 5%;
 }
 
-.products .images-container.high-position {
+.products-sc .images-container.high-position {
     background-position-y: 75%;
 }
 
@@ -99,13 +99,13 @@ article.products {
         width: 50%;
     }
 
-    .products .text-container, .products .text-container *, .products .text-container.reverse, .products .text-container.reverse * {
+    .products-sc .text-container, .products-sc .text-container *, .products-sc .text-container.reverse, .products-sc .text-container.reverse * {
         transform: none;
         margin-left: 0;
         margin-right: 0;
     }
 
-    .products div {
+    .products-sc div {
         height: 30vh;
     }
 }

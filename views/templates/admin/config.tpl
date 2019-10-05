@@ -18,4 +18,12 @@
 	<p class="alert alert-success {if $hasSubmitSuccessed == false }hidden{/if}">
         {l s='Settings saved!' mod='simplecatalog'}
 	</p>
+
+	<div class="alert alert-info">
+		<p>{l s='This module creates 2 additional urls dedicated to your activity presentation:' mod='simplecatalog'}</p>
+		<ul>
+			<li>{l s='To access the product page go to: http://my-shop/module/simplecatalog/products' mod='simplecatalog'}</li>
+			<li>{l s='To access the coordinate page go to: http://my-shop/module/simplecatalog/coords' mod='simplecatalog'}</li>
+		</ul>
+	</div>
 </div>
